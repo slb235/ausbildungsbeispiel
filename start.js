@@ -3,6 +3,7 @@
 //= require_self
 //= require folder/b.js
 //= require folder/c.js
+//= require_tree tree
 
 console.log("start")
 
