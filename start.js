@@ -1,11 +1,7 @@
-
-//= require folder/a.js
-//= require_self
-//= require folder/b.js
-//= require folder/c.js
-//= require_tree tree
+//= require_tree scripts
 
 console.log("start")
+window.JST['templates/template']({ name: 'Peter' })
 
-// a, b, c, start (ohne require self)
-// a, start, b, c (mit require self)
+// window.JST = {};
+// window.JST['templates/template'] = function(_obj) { .... }
